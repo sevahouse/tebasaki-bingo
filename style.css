@@ -1,0 +1,37 @@
+:root {
+  color-scheme: light;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  color: #292820;
+  background: #fff;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+.container { width: min(100% - 2.5rem, 48rem); margin-inline: auto; }
+.site-header { background: #fff7cf; border-top: 5px solid #e9bd2b; }
+.site-header .container { padding-block: 1.25rem; }
+.site-name { color: inherit; font-size: 1.2rem; font-weight: 700; text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; margin-top: .75rem; }
+nav a { display: inline-block; padding-block: .25rem; }
+nav a[aria-current="page"] { font-weight: 700; text-decoration-thickness: 2px; }
+a { color: #655000; text-underline-offset: .2em; }
+a:hover { color: #292820; }
+a:focus-visible { outline: 3px solid #806300; outline-offset: 4px; border-radius: 2px; }
+main { padding-block: 2.5rem 3rem; min-height: 50vh; }
+h1 { font-size: clamp(1.65rem, 5vw, 2.25rem); line-height: 1.5; margin: 0 0 1rem; }
+h2 { font-size: 1.2rem; line-height: 1.6; margin: 2rem 0 .5rem; }
+p { margin: .75rem 0; }
+.lead { font-size: 1.2rem; margin-bottom: 2rem; }
+.contact { background: #fffbea; border-left: 3px solid #e9bd2b; padding: .75rem 1rem; }
+.date { color: #625f52; font-size: .9rem; }
+ul { padding-left: 1.5rem; }
+li + li { margin-top: .5rem; }
+.site-footer { border-top: 1px solid #e6e3d8; padding-block: 1.25rem; color: #625f52; }
+small { font-size: .875rem; }
+@media (max-width: 480px) {
+  .container { width: calc(100% - 2rem); }
+  nav { gap: .5rem 1rem; }
+  main { padding-block: 2rem; }
+}
